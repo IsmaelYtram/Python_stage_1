@@ -1,0 +1,127 @@
+'''
+Faça um programa que leia 𝑛 notas de um aluno que estejam entre 0 e 10 e informe se o aluno 
+está aprovado (>=7), reprovado (<=5) ou recuperação (>=5,1 e <=6,9)
+
+
+def calculo(i):
+    for i in range(1,i+1,1):
+        nota = int(input("Informe uma nota:"))
+        if(nota >= 7):
+            print("Aluno aprovado!")
+        elif(nota <=5):
+            print("Aluno reprovado!")
+        else:
+            print("Aluno recuperação!")
+    
+i = int(input("Quantas notas deseja informar? "))
+calculo(i)
+
+Faça um programa que calcule o mostre a média aritmética de 𝑛 notas
+
+def calculo(i):
+    for i in range(1,i+1,1):
+        nota1 = int(input("Informe uma nota: "))
+        nota2 = int(input("Informe uma segunda nota: "))
+        print("Média aritmética: ",(nota1+nota2)/2)
+
+i = int(input("Quantas notas serão inseridas? "))
+calculo(i)
+   
+Elabore um programa em Python que leia um nome e a idade e apresente na tela se a pessoa e 
+maior de idade (>=17) e em que ano nasceu.
+
+def calculo(nome,idade):
+    if(idade >= 17):
+        print("Tem ou é maior que 17 anos!")
+        print("Ano que nasceu: ",2022 - idade)
+
+nome = input("Informe o nome: ")
+idade = int(input("Informe a idade: "))
+calculo(nome,idade)
+
+Um algoritmo em Python que calcule uma lista dos fatoriais dos números de 1 até 10 e 
+imprima.
+
+fat = 1 
+for i in range(1,10+1,1):
+    fat = fat * i
+    i = i + 1
+    
+print("Fatorial dos números 1 até 10: ",fat)
+
+import math 
+
+numero = int(input("Informe um número:"))
+print(math.factorial(numero))
+
+
+Solicita do usuário o número de elementos de um conjunto (𝑛) e o valor da combinação dos 
+elementos desse conjunto (𝑘) e imprima a qtde de elementos resultantes da combinação, tal 
+que 𝑛 >= k
+
+import math
+
+n = int(input("Informe o número de elementos: "))
+k = int(input("Informe quantas combinações deste conjunto: "))
+
+if(n >= k):
+    print(math.comb(n,k))
+
+Faça o mesmo exercício anterior para saber a quantidade de elementos resultantes da 
+permutação
+
+import math
+n = int(input("Quantidade de itens: "))
+k = int(input("Quantidade de permutação para estes itens: "))
+print("Permutações possíveis: ",math.perm(n,k))
+
+Solicita do usuário os valores do cateto e retorna a hipotenusa
+
+import math 
+
+x = int(input("Informe o cateto: "))
+y = int(input("Informe o outro cateto: "))
+print("Hipotenusa: ",math.hypot(x, y))
+
+Calcule o logaritmo de um número informado pelo usuário, juntamente com a sua base
+
+import math
+
+print(math.log(4,2))
+
+Um algoritmo em Python que calcule uma lista dos fatoriais dos números de 1 até 10 e 
+imprima
+
+import math
+
+print(math.factorial(10))
+
+Elabore um programa que imprima uma sequência da tabuada da potência de base 2 e base 3 
+de uma lista de 0 até 10.
+
+print("2 elevado a 0 = 1")
+for i in range(1,10+1,1):
+    print("2 elevado a",i,"=",2 **i)
+print("3 elevado a 0 = 1")
+print("\n")
+for i in range(1,10+1,1):
+    print("3 elevado a",i,"=",3 **i)
+
+Faça um algoritmo em python que leia três notas de alunos e informe a média final, devendo 
+esta ser apresentada com duas casas decimais após a vírgula.
+
+nota1 = float(input("Informe a nota: "))
+nota2 = float(input("Informe a segunda nota: "))
+nota3 = float(input("Informe a terceira nota: "))
+media = (nota1+nota2+nota3)/3
+print("Média final: ",(round(media,2)))
+
+Faça um programa que imprima a tabuada de soma e multiplicação de um número informado 
+pelo usuário, de 1 até 10
+
+def calculo(num):
+    for i in range(1,10+1,1):
+        print(num + i, num * i)
+num = int(input("Informe um número: "))
+calculo(num)
+'''
