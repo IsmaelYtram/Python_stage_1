@@ -1,0 +1,40 @@
+ LISTA
+
+lista = ["pyhton",4,'n']
+print(type(lista))
+
+lista = ["marty","beatriz","hera"]
+for i in range(len(lista)):
+    print(lista[i])
+    
+lista[1] = 5
+print(lista)
+
+lista = ["Marty","Bia","Hera","Tiggo 8"]
+lista1 = [4,3,2,1,]
+print(lista + lista1)
+print(len(lista + lista1))
+
+print("tem pyhton na lista?","python" in  lista)
+print("tem marty na lista?",4 in  lista)
+
+lista1 = [1,2,3,4,5,67,4]
+print("maior elemento: ", max(lista1))
+print("menor elemento: ", min(lista1))
+
+lista1 = [1,2,3,4,567,8]
+print(sum(lista1))
+
+lista = [1,2,3,4,"marty"]
+lista.append("beatriz")
+print(lista)
+
+lista = ["python",1,2,3,4]
+lista.insert(1,"pascal")
+lista.remove("python")
+lista.pop()
+print(lista)
+
+lista = [1,254,3,2,6,43,5]
+lista.sort()
+print(lista)
