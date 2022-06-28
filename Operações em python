@@ -1,0 +1,44 @@
+'''
+                                                OPERAÇÕES EM PYTHON
+                                
+Elabore os seguintes programas em Python:
+    a) Solicite dois números inteiros do usuário e
+    imprima:
+    
+    i. A soma, a subtração e multiplicação
+    ii. O resto da divisão dos dois números
+    
+    b) Solicite o nome e o ano de nascimento do usuário
+    e informe a sua idade.
+    
+    c) Solicite três notas do usuário e calcule a média
+    final.
+
+'''
+'''
+num1 = int(input("Informe um número: "))    #declaramos um objeto do tipo int e usamos a função input para receber o valor
+num2 = int(input("Informe um segundo número: "))
+# i 
+
+print("Soma: ", num1 + num2)    #utilizamos a função print para exibir o texto e o valor do objeto 
+print("Subtração: ", num1 - num2)
+print("Multiplicação: ", num1 * num2)
+
+#ii 
+
+print("Resto da divisão:",num1 % num2) #utilizamos a função print para exibir o texto e o valor do objeto 
+
+#b
+
+nome = input("Informe o nome: ")    #declaramos um objeto e usamos a função input para receber os dados
+num1 = int(input("Informe o ano de nascimento: "))  #declaramos um objeto do tipo int e usamos a função input para receber os dados *função input permite entrada de txt
+
+print(nome,"tem", 2021 - num1,"de idade", sep = " ")    #usamos a função print para exibir o objeto e a mensagem de txt, sep = " " para separar os parametros
+
+#c
+
+num1 = int(input("Informe a nota:"))    #declaramos 3 objetos do tipo int e usamos a função input para receber os valores 
+num2 = int(input("Informe a segunda nota:"))
+num3 = int(input("Informe a terceira nota:"))
+print("Méda final:",(num1+num2+num3)/3) #utilizamos a função print para exibir a média das notas 
+'''
