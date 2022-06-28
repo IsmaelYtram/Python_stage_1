@@ -1,0 +1,27 @@
+3) Implemente o script da classe Calculadora, apresentado em sala, solicitando os 
+números inteiros do usuário. (0,5 pontos)
+
+class calculadora:
+ def __init__(self,a,b):
+ self.a = a
+ self.b = b
+ 
+ def soma(self):
+ return self.a + self.b
+ 
+ def subtrai(self):
+ return self.a - self.b
+ 
+ def multiplica(self):
+ return self.a * self.b
+ 
+ def divide(self):
+ return self.a / self.b
+ 
+x = int(input("Informe um valor:"))
+y = int(input("Informe um segundo valor:"))
+c = calculadora(x,y)
+print("Soma", c.soma())
+print("Subtrai", c.subtrai())
+print("Multiplica", c.multiplica())
+print("Divisão", c.divide())
