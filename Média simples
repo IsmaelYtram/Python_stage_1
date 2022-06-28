@@ -1,0 +1,8 @@
+nome = input("Informe o nome: ")    #utilzamos a função input() para receber um valor e armazenar em nome
+nota1 = float(input("Informe a nota: "))    #utilzamos a função input() para receber um valor e armazenar em nota1
+nota2 = float(input("Informa a nota: "))    #utilzamos a função input() para receber um valor e armazenar em nota2
+media = (nota1+nota2)/2 #declaramos um objeto que ira receber a soma da nota1 e nota2 e dividir por 2
+print(nome, "obteve media: ",media) #utilzamos a função print() para exibir dois parâmetros, nome e media
+
+
+
