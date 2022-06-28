@@ -1,0 +1,66 @@
+ESTRUTURA DE DECISÃO 
+
+
+f) Ler um valor e escrever a mensagem “É MAIOR QUE 10!” se o valor lido for maior que 10, caso contrário escrever “NÃO É MAIOR QUE 10!”.
+
+num = int(input("Digite um valor:"))    #declaramos um objeto tipo int e usamos a função input para receber os dados
+
+if(num > 10):   #teste condicional "if", caso seja verdadeiro ira realizar o bloco abaixo 
+    print("Valor é maior que 10!")
+else:       #caso seja falso vai realizar o bloco abaixo
+    print("Não é maior que 10!")
+
+g) Escreva um programa em python que recebe um inteiro e diga se é par ou ímpar.
+
+num = int(input("Informe um valor:"))   #objeto tipo int que recebe os dados pela função input
+
+if(num %2 == 0):    #condicional if, caso o teste lógico seja verdadeiro vai realizar o bloco abaixo 
+    print("O valor é par!")
+else:       #caso o teste seja falso, vai realizar o bloco abaixo
+    print("O valor é ímpar!")
+
+h) Ler um valor e escrever se é positivo ou negativo (considere o valor zero como positivo). 
+
+num = int(input("Informe um número:"))  #objeto tipo int que vai receber dados pela função input
+if(num >= 0 ):  #Estrutura if, caso verdadeiro executa o bloco abaixo
+    print("O valor é positivo!")
+else:
+    print("O valor é negativo!")
+
+
+i) Ler as notas da 1a. e 2a. avaliações de um aluno. Calcular a média aritmética simples e 
+escrever uma mensagem que diga se o aluno foi ou não aprovado (considerar que nota 
+igual ou maior que 6 o aluno é aprovado). Escrever também a média calculada. 
+
+nota1 = float(input("Informe a nota:"))     #objeto tipo float com a função input para receber os dados
+nota2 = float(input("Informe a segunda nota:"))
+media = (nota1+nota2)/2     #objeto que vai receber nota1 e nota 2 para calcular a média 
+if(media >= 6):         #teste condicional if, caso verdadeiro executa o bloco abaixo 
+    print("Aluno foi aprovado!","Média do aluno:",media)
+else:           #caso falso, executa este bloco 
+    print("Aluno foi reprovado!","Média do aluno:",media)
+
+
+j) Faça um programa que peça dois números ao usuário e mostre qual o maior e qual o 
+menor
+
+num1 = int(input("Informe um número:"))     #objeto tipo int, função input para receber o dados 
+num2 = int(input("Informe um segundo número:"))
+maior = num1    #obeto maior vai receber o valor de num1
+if(maior < num2):   #caso seja verdadeiro vai executa o bloco abaixo 
+    maior = num2
+    print("Maior número é:",maior,"e o menor número é:",num1)
+else:       #caso seja falso vai executar esta bloco 
+    print("Maior número é:",num1,"e o menor número é:",num2)
+
+
+k) Para doar sangue é necessário ter entre 18 e 67 anos. Faça um aplicativo na linguagem 
+Python que pergunte a idade de uma pessoa e diga se ela pode doar sangue ou não.
+
+idade = int(input("Informe a idade:"))      #objeto tipo int e função input para receber os dados
+
+if(idade >= 18 and idade <= 67):    #teste logico, caso verdadeiro executa o bloco abaixo 
+    print("A pessoa pode doar sangue!")
+else:
+    print("A pessoa não pode doar sangue!")
+'''  
