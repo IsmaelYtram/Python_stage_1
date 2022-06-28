@@ -1,0 +1,41 @@
+#                                                   DICIONARIO
+dicio = {3:"python",5:"java",6:"c"}
+print(dicio)
+dicio[4]="banana"
+print(dicio)
+
+print(dicio[3])
+print(dicio[5])
+
+print(dicio.get(6))
+print(dicio.get(3))
+
+print(dicio.keys())
+print(dicio.items())
+print(dicio.values())
+
+for i in dicio.keys():
+    print(i)
+    
+for i in dicio.values():
+    print(i)
+    
+for i,j in dicio.items():
+    print(i,j,sep = "-")
+    
+print("\n")
+
+print(3 in dicio)
+print("python" in dicio)
+print("python" in dicio.values())
+
+nome = {"marty":21,"bia":19,"lana":21}
+nome2 = {"gabi":21, "bruno": 21}
+nome.update(nome2)
+print(nome)
+
+del nome["lana"]
+print(nome)
+
+print(nome.pop("bia"))
+print(nome.pop("lorena","Valor não encontrado"))
