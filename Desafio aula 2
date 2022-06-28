@@ -1,0 +1,30 @@
+4) Implementar o exemplo abaixo de Herança da Classe Mamíferos em Python:
+ 
+class mamifero(object):
+ def __init__(self,nome):
+ self.nome = nome
+ 
+class baleia(mamifero):
+ def __init__(self,nome):
+ super().__init__(nome)
+ def nada(self):
+ print("A baleia é um mamífero que nada!")
+ 
+class mico(mamifero):
+ def __init__(self,nome):
+ super().__init__(nome)
+ def pula(self):
+ print("O mico é um mamífero que pula!")
+ 
+class pessoa(mamifero):
+ def __init__(self,nome):
+ super().__init__(nome)
+ def anda(self):
+ print("A pessoa é um mamífero que anda!")
+ 
+baleia1 = baleia("Baleia azul")
+mico1 = mico("Mico leão ")
+pessoa1 = pessoa("Beatriz")
+print(baleia1.nome),baleia1.nada()
+print(mico1.nome),mico1.pula()
+print(pessoa1.nome),pessoa1.anda(
