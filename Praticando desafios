@@ -1,0 +1,114 @@
+#3. Desenvolva um script em Python que imprima na tela os números divisores de 7 entre 1 e 
+#150.
+
+for i in range (1,151,1):
+    if(i %7 == 0):
+        print(i)
+
+#4. Tendo um valor 𝑛 informado do teclado (𝑛 > 0), imprima os valores inteiros de 1 até 𝑛. 
+
+num = int(input("Informe um valor maior que 0:"))
+
+for i in range (1,num+1,1):
+    print(i)
+
+#5. Faça um programa que leia uma quantidade indeterminada de números positivos e conte 
+#quantos deles estão nos seguintes intervalos: [0-25], [26-50], [51-75] e [76-100]. A entrada de 
+#dados deverá terminar quando for lido um número negativo. 
+
+cont1 = 0 
+cont2 = 0 
+cont3 = 0 
+cont4 = 0 
+
+num = 0
+
+while num >= 0:
+    num = int(input("Informe um valor:")) 
+    if(num >= 0 and num <= 25):
+            cont1 = cont1 + 1
+    elif(num > 25 and num <= 50):
+            cont2 = cont2 + 1
+    elif(num > 50 and num <= 75):
+            cont3 = cont3 + 1 
+    elif(num > 75 and num <=100):
+            cont4 = cont4 + 1 
+            
+print("Valores ente 0 - 25:",cont1)
+print("Valores ente 26 - 50:",cont2)
+print("Valores ente 51 - 75:",cont3)
+print("Valores ente 76 - 100:",cont4)
+
+
+#6. Faça um programa em Python, que lê um número 𝑛 e imprime os 𝑛 primeiros números da 
+#sequência de Fibonacci. A sequência de Fibonacci representa um padrão de números gerado 
+#pela soma dos dois anteriores e é dada por [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, ...]. 
+
+num = int(input("Informe um número:"))
+a = 1 
+b = 1 
+
+if(num == 1):
+    print("0")
+elif(num == 2):
+    print("1")
+else:
+    print("0")
+    print(a)
+    print(b)
+    for i in range(num - 3):
+        soma = a + b 
+        b = a 
+        a = soma
+        print(soma)
+
+
+#7. Faça um programa que leia uma palavra e informe quantas letras tem essa palavra, sem 
+#considerar os espaços. Ex: “Linguagem Python” possui 15 letras. 
+
+nome = input("Informe uma palavra:")
+num = 0 
+for i in nome:
+    if(i != " "):
+        print(i)
+        num = num + 1
+print("Total de letras:",num)
+
+#8. Faça um programa que leia dois números inteiros e gere o intervalo entre os dois números. 
+#Seu programa tem de verificar e garantir de que o 1º número é menor que o 2º número.
+
+num1 = int(input("Informe um número:"))
+num2 = int(input("Informe um segundo número:"))
+
+if(num2 > num1):
+    for i in range(num1,num2+1,1):
+        print(i)
+
+#9. Faça um programa que leia 10 números e imprima a quantidade de números pares e ímpares 
+#existentes entre eles.
+
+par = 0
+impar = 0
+for i in range(1,11,1):
+    num = int(input("Informe um número:"))
+    if(num %2 == 0):
+        par = par + 1
+    else:
+        impar = impar + 1
+
+print("Quantidade par:",par,"quantidade de impar:",impar)
+    
+#10.Elabore um script em Python, que tendo 5 números inteiros lidos do teclado, imprima o maior 
+#e o menor deles. 
+
+maior = -999
+menor = 999 
+
+for i in range(1,6,1):
+    num = int(input("Informe um número:"))
+    if(num > maior):
+        maior = num
+    elif(num < menor):
+        menor =  num
+        
+print("O maior número é:",maior,"e o menor número é:",menor)
