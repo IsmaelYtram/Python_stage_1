@@ -1,0 +1,64 @@
+ OPERAÇÕES STRING
+
+print(3.14,int(3.14))
+print("1234",int("1234"))
+valor = True 
+print(type(valor))
+
+nome = "Marty ismael"
+contador = 0
+for i in nome:
+    if(i != " "):
+        contador = contador + 1
+        
+print(contador)
+
+nome = "Beatriz Aguiar"
+print(nome[3])
+
+nome = "Carol Maria"
+for i in range(len(nome)):
+    print(nome[i])
+    
+nome = "Marty Ismael"
+for i in nome:
+    print(i)
+    
+nome = "carol maria"
+print(nome[2:7])
+
+nome = ("Marty ismael")
+print(nome[2:])
+print(nome[:7])
+print(nome[::-1])
+
+print(nome[::-1])
+
+nome = "Marty Ismael"
+nome1 = nome.replace("Marty","Beatriz")
+nome2 = nome1.upper()
+print(nome2)
+
+print(nome2)
+
+nome3 = nome2.replace("BEATRIZ","MARTY")
+nome3 = nome2.lower()
+print(nome3)
+
+sei = "Futebol brasileiro Futebol carioca Futebol"
+print(sei.count("Futebol"))
+
+x = "1234ma"
+y = "1234"
+print(x.isdigit())
+print(y.isdigit())
+
+k = "1234abcd"
+w = "1234_abcd"
+print(k.isalnum())
+print(w.isalnum())
+
+nome = "marty"
+nome1 = "123marty"
+print(nome.isalpha())
+print(nome1.isalpha())
